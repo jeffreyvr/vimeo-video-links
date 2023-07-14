@@ -24,7 +24,7 @@ class VimeoVideoLinks
 
     public function enqueue()
     {
-        wp_enqueue_script('vimeo-video-links', plugin_dir_url(VIMEO_VIDEO_LINKS_PLUGIN_FILE) . 'assets/js/vimeo-video-links.js', ['jquery'], '0.1.0');
+        wp_enqueue_script('vimeo-video-links', plugin_dir_url(VIMEO_VIDEO_LINKS_PLUGIN_FILE) . 'assets/js/vimeo-video-links.js', ['jquery'], VIMEO_VIDEO_LINKS_PLUGIN_VERSION);
         wp_localize_script('vimeo-video-links', 'vimeo_video_links', ['ajax_url' => admin_url('admin-ajax.php')]);
     }
 

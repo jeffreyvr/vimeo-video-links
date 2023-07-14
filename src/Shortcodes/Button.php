@@ -6,15 +6,15 @@ class Button
 {
     public function __construct()
     {
-        add_shortcode('vimeo_video_button', [$this, 'render']);
+        add_shortcode('vimeo_video_button', [$this, 'render'], 10, 2);
     }
 
-    public function render($atts)
+    public function render($atts, $content = null)
     {
         $atts = shortcode_atts([
             'id' => null,
             'quality' => null,
-            'text' => 'Download',
+            'content' => $content ?? 'Download',
             'class' => 'button'
         ], $atts);
 

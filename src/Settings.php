@@ -15,6 +15,8 @@ class Settings
     {
         $settings = new WPSettings(__('Vimeo Video Links', 'vimeo-video-links'));
 
+        $settings->set_menu_parent_slug('options-general.php');
+
         $tab = $settings->add_tab(__('General', 'vimeo-video-links'));
 
         $section = $tab->add_section('API');
