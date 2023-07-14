@@ -34,6 +34,7 @@ class VimeoVideoLinks
             Settings::class,
             Shortcodes\Url::class,
             Shortcodes\Button::class,
+            Shortcodes\Link::class,
             Actions\GetDownloadUrl::class,
         ];
 

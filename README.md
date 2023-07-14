@@ -10,7 +10,9 @@ For more information on getting these credentials, see: https://developer.vimeo.
 
 ## Shortcodes
 
-For both shortcodes, the quality attribute is optional.
+For all shortcodes, the quality attribute is optional.
+
+The link and button shortcodes, will fetch the Vimeo download url through an ajax request. This is to prevent the Vimeo URL, which is valid for 24 hours, to be cached by a caching plugin - causing invalid url's.
 
 ### Button
 
@@ -18,7 +20,11 @@ For both shortcodes, the quality attribute is optional.
 
 If you don't specify a text, it will fallback to 'Download'.
 
-The button shortcodes, fetches the Vimeo download url through an ajax request. This is to prevent the Vimeo URL, which is valid for 24 hours, to be cached by a caching plugin - causing invalid url's.
+### Link
+
+`[vimeo_video_link id="vimeo_video_id" quality="hd"]Download the video[/vimeo_video_link]`
+
+If you don't specify a text, it will fallback to 'Download'.
 
 ### URL
 
