@@ -1,0 +1,34 @@
+{
+    "name": "jeffreyvanrossum/vimeo-video-links",
+    "description": "Adds a shortcode to embed Vimeo videos with a link to the video file.",
+    "type": "wordpress-plugin",
+    "license": "Private",
+    "authors": [
+      {
+        "name": "Jeffrey van Rossum",
+        "email": "jeffrey@vanrossum.dev"
+      }
+    ],
+    "require": {
+      "php": "^7.4|^8.0",
+      "automattic/jetpack-autoloader": "^2.10",
+        "jeffreyvanrossum/wp-settings": "^1.1",
+        "vimeo/vimeo-api": "^3.0"
+    },
+    "autoload": {
+      "psr-4": {
+        "Jeffreyvr\\VimeoVideoLinks\\": "src"
+      },
+      "files": [
+        "src/helpers.php"
+      ]
+    },
+    "config": {
+      "platform": {
+          "php": "7.4"
+      },
+      "allow-plugins": {
+        "automattic/jetpack-autoloader": true
+      }
+    }
+  }

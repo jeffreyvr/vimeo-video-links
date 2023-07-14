@@ -1,0 +1,12 @@
+.git/*
+.github/*
+resources/*
+phpcs.xml
+composer.json
+composer.lock
+.gitignore
+.distignore
+webpack.mix.js
+mix-manifest.json
+package.json
+package-lock.json
